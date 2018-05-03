@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <style>
+        body{
+            height: 1800px;
+        }
+        #title{
+            background-image: url(https://gorillastack.com/wp-content/uploads/2017/07/pattern-1-1.png);
+            width: 100%;
+            height: 100px;
+            position: relative;
+        }
+        #box{
+            width: 80%;
+            height: 100%;
+            margin-left: 10%;
+            /*border: 1px solid #000;*/
+            overflow: hidden;
+        }
+        #box li{
+            list-style: none;
+            float: left;
+        }
+        #box li:nth-of-type(1){
+            width: 40%;
+        }
+        #box li:nth-of-type(2){
+            width: 60%;
+        }
+        #log{
+            padding-top: 25px;
+            margin-left: 160px;
+            width: 200px;
+            height: 34.25px;
+        }
+        #aaa{
+            /*width:800px;*/
+            /*display: inline-block;*/
+            padding-top: 35px;
+            /*padding-left: 180px;*/
+        }
+        #aaa a{
+            color: white;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+        #show{
+            z-index: 12;
+            position: absolute;
+            background: rgb(49,63,120);
+            top:90px;
+            left:40%;
+            width: 200px;
+            height: 220px;
+            display:none;
+        }
+        #show a{
+            display: block;
+            padding-bottom: 3px;
+            border-bottom: 1px solid lightgray;
+            font-size: 12px;
+        }
+        #show a:hover{
+            text-decoration: none;
+            color: orange;
+        }
+
+        .glyphicon{
+            width: 50.56px;
+            height: 46px;
+            font-size: 16px;
+            background: rgb(58,87,129);
+            color:white;
+            text-align: center;
+            line-height: 46px;
+            display: none;
+        }
+        input{
+            background: none;
+            display: none;
+            font-size: 13px;
+        }
+        .glyphicon div input:last-child{
+            color:orange;
+        }
+        #introduce{
+            width: 100%;
+            height: 449px;
+            background-image: url(https://gorillastack.com/wp-content/uploads/2017/07/pattern-1-1.png);
+            position: absolute;
+            top:100px;
+        }
+        #introduce h2{
+            color:white;
+            position: absolute;
+            left:37%;
+        }
+        #changeText{
+            position: absolute;
+            left:30%;
+            top:160px;
+        }
+        #changeText span{
+            color: white;
+            font-size: 20px;
+            display: inline-block;
+        }
+        #free{
+            width: 127.6px;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            background: #de6c46;
+            color:white;
+            position: absolute;
+            left:45%;
+            top:350px;
+        }
+        #image{
+            position: absolute;
+            top:450px;
+            left:25%;
+        }
+        .img{
+            width: 99px;
+            height: 57px;
+            float: left;
+            margin-left: 30px;
+        }
+        .img img{
+            width: 100%;
+            height: 100%;
+        }
+        #middle{
+            width: 70%;
+            height: 500px;
+            position: absolute;
+            top:600px;
+            margin-left: 15%;
+            /*border: 1px solid #000;*/
+        }
+        #middle img{
+            width: 85px;
+            height: 85px;
+            margin-left: 34%;
+        }
+        #middle p{
+            text-align: center;
+        }
+        #bottom{
+            width: 100%;
+            height: 393px;
+            position: relative;
+            /*left:-150px;*/
+            top:73%
+        }
+        #bottom img{
+            width: 100%;
+            height: 100%;
+        }
+        #back{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            border: 2px solid lightgray;
+            border-radius: 50%;
+            position: absolute;
+            top:342px;
+            right: 0px;
+        }
+        #back:hover{
+            cursor:pointer;
+        }
+        @media(max-width: 1385px){
+            #box{
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                height: 100%;
+                /*margin-left: 10%;*/
+                /*border: 1px solid #000;*/
+                overflow: hidden;
+            }
+
+        }
+        @media(max-width: 1229px){
+            #box li:nth-of-type(1){
+                width: 35%;
+            }
+            #box li:nth-of-type(2){
+                width: 65%;
+            }
+        }
+        @media(max-width: 1135px){
+            #title{
+                height: 200px;
+                z-index: 10;
+            }
+            #box li{
+                list-style: none;
+                float: none;
+            }
+            #box li:nth-of-type(2){
+                width: 666.5px;
+                float: right;
+            }
+            #show{
+                left:35%;
+            }
+        }
+        @media(max-width: 1020px){
+            #title{
+                height: 100px;
+            }
+            #box li:nth-of-type(2){
+                display: none;
+            }
+            .glyphicon{
+                float: right;
+                display: block;
+                visibility: visible;
+            }
+        }
+        @media(max-width: 880px){
+            #introduce h2{
+                left:25%;
+            }
+            #changeText{
+                left:20%;
+            }
+            #image{
+                left:16%
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="title">
+    <div id="box">
+        <li>
+            <div id="log">
+                <a href=""><img src="//www.gorillastack.com/wp-content/uploads/2017/08/gorillastack-white.svg" alt=""></a>
+            </div>
+        </li>
+        <li>
+            <div id="aaa">
+                <a href="#">AWS AUTOMATION
+                    <div id="show">
+                        <a href="#">Schedule EC2 Instances</a>
+                        <a href="#">Schedule RDS Instances</a>
+                        <a href="#">Schedule EBS Deletion</a>
+                        <a href="#">Schedule EBS Snapshots</a>
+                        <a href="#">Delete Detached EBS Volumes</a>
+                        <a href="#">Schedule Auto Scaling</a>
+                        <a href="#">AWS Billing And Usage Alerts</a>
+                        <a href="#">Schedule EC2 Run Commands</a>
+                        <a href="#">Schedule Lambda Functions</a>
+                        <a href="#">Webhook To Lambda Function</a>
+                    </div>
+                </a>
+                <a href="#">CLOUDTRAIL SLACK BOT</a>
+                <a href="#">PRICING</a>
+                <a href="#">DEMO</a>
+                <a href="#">LOGIN</a>
+                <a href="#" style="color:orange">FREE TRIAL</a>
+            </div>
+        </li>
+        <a href="#"><div class="glyphicon glyphicon-menu-hamburger">
+            <div>
+                <input type="button" value="AWS AUTOMATION">
+                <input type="button" value="CLOUDTRAIL SLACK BOT">
+                <input type="button" value="PRICINGPRICING">
+                <input type="button" value="DEMO">
+                <input type="button" value="LOGIN">
+                <input type="button" value="FREE TRIAL">
+            </div>
+        </div></a>
+    </div>
+</div>
+<div id="introduce">
+    <h2>AWS Automation & Workflows</h2>
+    <div id="changeText"><span>Take control of AWS</span>&nbsp;&nbsp;<span id="change">compliance</span>><span id='mouse' style="margin-left: 1px"><b>|</b></span>&nbsp;&nbsp;<span>with our powerful Rules Engine</span></div>
+
+</div>
+<a href=""><div id="free">FREE TRIAL</div></a>
+<div id="image">
+    <div class="img"><img src="https://www.gorillastack.com/wp-content/uploads/2017/07/DOI-White.svg" alt=""></div>
+    <div class="img"><img src="https://www.gorillastack.com/wp-content/uploads/2017/07/commvault_logo-white.svg" alt=""></div>
+    <div class="img"><img src="https://www.gorillastack.com/wp-content/uploads/2017/07/citrix.png" alt=""></div>
+    <div class="img"><img src="https://www.gorillastack.com/wp-content/uploads/2017/08/aflLogo2-compressed.png" alt=""></div>
+    <div class="img"><img src="https://www.gorillastack.com/wp-content/uploads/2017/07/health-direct-2.svg" alt=""></div>
+</div>
+<div id="middle">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="https://www.gorillastack.com/wp-content/uploads/2017/09/line-graph.svg" alt="">
+            <p><b>Run Away Costs</b><br>
+                As organisations scale more and more, usage inside the cloud and the resulting costs can begin to spiral out of control.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="https://www.gorillastack.com/wp-content/uploads/2017/09/team.svg" alt="">
+            <p><b>Pressure From The Finance Team</b><br>
+                One result of the runaway costs can be demand from the finance team to create savings and measure usage.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="https://gorillastack.com/wp-content/uploads/2017/07/lightnings.svg" alt="">
+            <p><b>Scripts Wreaking Havoc</b><br>
+                Scripts can be laborious, onerous to maintain and inflexible. As AWS constantly changes its schemas, you have to stay on your toes to adapt.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"><img src="https://www.gorillastack.com/wp-content/uploads/2017/09/Developer.svg" alt=""><p><b>Single Points of Human Failure</b><br>An employee who creates maintenance scripts isn’t scalable & often doesn’t stick around. Once they’re unavailable, organisations run into trouble.</p></div>
+        <div class="col-md-4"><img src="https://www.gorillastack.com/wp-content/uploads/2017/09/tv-screen.svg" alt=""><p><b>Complexity In Cloud Management</b><br>Maintaining the foundational services of an AWS environment from within the console can be complicated and restrictive.</p></div>
+        <div class="col-md-4"><img src="https://www.gorillastack.com/wp-content/uploads/2017/09/locked.svg" alt=""><p><b>Inflexible Control & Permissions</b><br>Organisations that want to permit their engineers granular controls over their infrastructure find it hard to scale permissions and cede control.</p></div>
+    </div>
+</div>
+<div id="bottom">
+    <img src="img/1.png" alt="">
+    <div id="back" class="glyphicon glyphicon-chevron-up"></div>
+</div>
+<script src="jquery-3.2.1.js"></script>
+<script>
+    $('#aaa').children('a').eq(0).mouseenter(function () {
+        $('#show').show();
+        $('#show').mouseenter(function () {
+                    $('#show').show();
+        })
+        $('#show').mouseleave(function () {
+            setTimeout(function () {
+                $('#show').hide();
+            },1500)
+
+        })
+    })
+
+//    $('#aaa').children('a').eq(0).mouseleave(function () {
+//
+//        setTimeout(function () {
+////            if(){}
+//            $('#show').hide();
+//        },2000)
+
+//    })
+    $('.glyphicon').click(function(){
+//        console.log(1);
+        var $box=$('#box').width()*0.8;
+        $('input').css({'width':$box,'border':'2px solid white','height':'44px','marginTop':'5px','float':'right'}).toggle();
+        if($('#title').height()==545){
+            $('#title').height(100);
+        }else{
+            $('#title').height(545);
+        }
+    })
+
+    var flag=false;
+    var arr=['compliance','security','Resource Management',' Cost Optimisation','Workflows','Governance']
+    var newArr=['compliance','security','Resource Management',' Cost Optimisation','Workflows','Governance']
+    var i=0;
+
+    var timer=setInterval(function () {
+        if(arr[i].length==0){
+            flag=true;
+            if(i<newArr.length){
+                i++;
+                arr[i]='';
+            }else{
+                i=0;
+            }
+        }
+        if(arr[i].length==newArr[i].length){
+            flag=false;
+        }
+
+        if(!flag){
+            if($('#change').html().length==arr[i].length){
+                var rArr=arr[i].slice(0,arr[i].length-1);
+                arr[i]=rArr;
+                $('#change').html(rArr);}
+
+        }
+
+
+        if(flag){
+            if($('#change').html().length==arr[i].length){
+                var nArr=newArr[i].slice(0,arr[i].length+1);
+                arr[i]=nArr;
+                $('#change').html(nArr);
+            }
+        }
+
+    },100)
+
+    var timer2=setInterval(function () {
+        $('#mouse').toggle();
+    },300)
+
+    var $height=$(document).scrollTop();
+    $('#back').click(function () {
+        $(document).scrollTop(0);
+//        $(document).animate({top:-$height},1200);
+    })
+</script>
+</body>
+</html>
